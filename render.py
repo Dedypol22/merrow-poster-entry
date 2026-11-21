@@ -160,7 +160,7 @@ beam = Image.new("RGBA", (w, h), (0, 0, 0, 0))
 bd = ImageDraw.Draw(beam)
 bd.polygon([(lx + 8 * SS, ly - 52 * SS), (700 * SS, ly - 6 * SS),
             (700 * SS, ly + 26 * SS), (lx + 8 * SS, ly - 40 * SS)],
-           fill=(255, 224, 150, 75))
+           fill=(255, 224, 150, 110))
 beam = beam.filter(ImageFilter.GaussianBlur(6 * SS))
 img.paste(beam, (0, 0), beam)
 d = ImageDraw.Draw(img, "RGBA")
